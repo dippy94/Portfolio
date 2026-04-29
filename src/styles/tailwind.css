@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ==================== Primary Colors ==================== */
+    /* Background Colors */
+    --bg-primary: #080808;
+    --bg-card: #080808;
+    --bg-overlay: rgba(8, 8, 8, 0.95);
+
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #808080;
+    --text-accent: #e43116;
+    
+    /* Border Colors */
+    --border-primary: rgba(128, 128, 128, 0.3);
+    --border-secondary: rgba(128, 128, 128, 0.2);
+    --border-light: rgba(255, 255, 255, 0.1);
+
+    /* ==================== Typography Variables ==================== */
+    /* Font Sizes - Mobile First */
+    --font-size-xs: 10px;
+    --font-size-sm: 12px;
+    --font-size-base: 16px;
+    --font-size-md: 18px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 26px;
+    --font-size-3xl: 28px;
+    --font-size-4xl: 32px;
+    --font-size-5xl: 38px;
+    --font-size-6xl: 40px;
+    --font-size-7xl: 48px;
+    --font-size-hero: 128px;
+    --font-size-hero-lg: 180px;
+
+    /* Font Weight Variables */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Height Variables */
+    --line-height-xs: 14px;
+    --line-height-sm: 15px;
+    --line-height-base: 16px;
+    --line-height-md: 22px;
+    --line-height-lg: 26px;
+    --line-height-xl: 27px;
+    --line-height-2xl: 30px;
+    --line-height-3xl: 33px;
+    --line-height-4xl: 34px;
+    --line-height-5xl: 39px;
+    --line-height-6xl: 47px;
+    --line-height-7xl: 49px;
+    --line-height-8xl: 58px;
+    --line-height-hero: 156px;
+    --line-height-hero-lg: 218px;
+
+    /* Letter Spacing Variables */
+    --letter-spacing-tight: 1px;
+    --letter-spacing-normal: 2px;
+    --letter-spacing-wide: 4px;
+    --letter-spacing-wider: 6px;
+    --letter-spacing-widest: 12px;
+
+    /* Font Family Variables */
+    --font-primary: 'JetBrains Mono', monospace;
+    --font-secondary: 'Cormorant Garamond', serif;
+
+    /* ==================== Spacing Variables ==================== */
+    /* Margin Values */
+    --margin-xs: 4px;
+    --margin-sm: 6px;
+    --margin-md: 8px;
+    --margin-lg: 10px;
+    --margin-xl: 14px;
+    --margin-2xl: 16px;
+    --margin-3xl: 18px;
+    --margin-4xl: 24px;
+    --margin-5xl: 32px;
+    --margin-6xl: 34px;
+    --margin-7xl: 40px;
+    --margin-8xl: 44px;
+    --margin-9xl: 52px;
+    --margin-10xl: 60px;
+    --margin-11xl: 76px;
+    --margin-12xl: 80px;
+    --margin-13xl: 90px;
+    --margin-14xl: 92px;
+    --margin-15xl: 102px;
+    --margin-16xl: 108px;
+    --margin-hero: 266px;
+    --margin-hero-lg: 444px;
+    --margin-hero-xl: 448px;
+    --margin-hero-2xl: 452px;
+
+    /* Padding Values */
+    --padding-sm: 22px;
+    --padding-md: 30px;
+    --padding-lg: 32px;
+    --padding-xl: 36px;
+    --padding-2xl: 38px;
+    --padding-3xl: 50px;
+    --padding-4xl: 56px;
+    --padding-5xl: 60px;
+    --padding-6xl: 80px;
+    --padding-7xl: 116px;
+    --padding-8xl: 120px;
+    --padding-9xl: 140px;
+
+    /* Gap Values */
+    --gap-xs: 4px;
+    --gap-sm: 6px;
+    --gap-md: 8px;
+    --gap-lg: 10px;
+    --gap-xl: 12px;
+    --gap-2xl: 14px;
+    --gap-3xl: 36px;
+    --gap-4xl: 38px;
+    --gap-5xl: 42px;
+    --gap-6xl: 60px;
+    --gap-7xl: 122px;
+    --gap-8xl: 138px;
+    --gap-9xl: 140px;
+    --gap-10xl: 144px;
+    --gap-11xl: 148px;
+    --gap-12xl: 208px;
+
+    /* ==================== Border Variables ==================== */
+    /* Border Radius */
+    --radius-none: 0;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 20px;
+
+    /* Border Width */
+    --border-width-thin: 1px;
+    --border-width-medium: 2px;
+    --border-width-thick: 4px;
+
+    /* ==================== Layout Variables ==================== */
+    /* Width Values */
+    --width-full: 100%;
+    --width-container: 1124px;
+    --width-auto: auto;
+
+    /* Height Values */
+    --height-auto: auto;
+    --height-full: 100%;
+
+    /* ==================== Component-Specific Variables ==================== */
+    /* Header Component */
+    --header-bg: #080808;
+    --header-padding-y: var(--padding-sm);
+    --header-padding-x: var(--padding-6xl);
+    --header-text-color: var(--text-secondary);
+
+    /* Navigation Component */
+    --nav-gap: var(--gap-3xl);
+    --nav-font-size: var(--font-size-sm);
+    --nav-letter-spacing: var(--letter-spacing-normal);
+    --nav-link-color: var(--text-secondary);
+    --nav-link-color-hover: var(--text-primary);
+
+    /* Footer Component */
+    --footer-margin-top: var(--margin-14xl);
+    --footer-gap: var(--gap-7xl);
+    --footer-width: var(--width-container);
+
+    /* Card Component */
+    --card-bg: var(--bg-card);
+    --card-border: var(--border-primary);
+    --card-radius: var(--radius-xl);
+    --card-padding: var(--padding-lg);
+
+    /* Button/Link Component */
+    --link-color: var(--text-primary);
+    --link-color-hover: var(--text-accent);
+    --link-font-weight: var(--font-weight-semibold);
+
+    /* Grid Component */
+    --grid-gap: var(--gap-4xl);
+    --grid-columns: 12;
+  }
+}
+
+/* ==================== Custom Utility Classes ==================== */
+@layer utilities {
+  /* Container utility */
+  .container-custom {
+    max-width: var(--width-container);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+  }
+
+  /* Text gradient utility */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Hero text sizing */
+  .text-hero {
+    font-size: clamp(48px, 10vw, var(--font-size-hero));
+    line-height: clamp(58px, 12vw, var(--line-height-hero));
+  }
+
+  .text-hero-lg {
+    font-size: clamp(64px, 14vw, var(--font-size-hero-lg));
+    line-height: clamp(78px, 16vw, var(--line-height-hero-lg));
+  }
+}

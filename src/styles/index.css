@@ -1,0 +1,48 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+/* Import Tailwind CSS */
+
+/* Import Google Fonts */
+
+/* Import Cormorant Garamond */
+
+/* Global Base Styles */
+body {
+  font-family: 'JetBrains Mono', 'Cormorant Garamond', monospace, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #080808;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
